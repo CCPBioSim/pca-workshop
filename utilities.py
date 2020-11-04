@@ -33,15 +33,15 @@ def plot_rmsf(traj):
     plt.plot(rmsf)
     
     
-def plot_pca(pca_model, datanames, highlight=None):
+def plot_pca(scores, datanames, highlight=None):
     """
-    Plots the projection of each trajectory in the cofasu in the PC1/PC2 subspace.
+    Plots the projection of each trajectory in the set in the PC1/PC2 subspace.
     
     If highlight is a number, this dataset is plotted in red against all others in grey.
     
     """
-    p1 = pca_model.projs[0] # the projection of each snapshot along the first principal component
-    p2 = pca_model.projs[1] # the projec tion along the second.
+    p1 = scores[:, 0] # the projection of each snapshot along the first principal component
+    p2 = scores[:, 1] # the projec tion along the second.
 
     frames_per_rep = len(p1) // len(datanames) # number of frames (snapshots) in each dataset - assumed equal length
     for i in range(len(datanames)):
