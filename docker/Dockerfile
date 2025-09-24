@@ -3,7 +3,7 @@ ARG BASE_IMAGE=latest
 FROM ghcr.io/ccpbiosim/jupyterhub-base:$BASE_IMAGE
 
 LABEL maintainer="James Gebbie-Rayet <james.gebbie@stfc.ac.uk>"
-LABEL org.opencontainers.image.source=https://github.com/jimboid/biosim-pca-workshop
+LABEL org.opencontainers.image.source=https://github.com/ccpbiosim/pca-workshop
 LABEL org.opencontainers.image.description="A repository containing the build steps for the ccpbiosim workshop on PCA."
 LABEL org.opencontainers.image.licenses=MIT
 
@@ -12,7 +12,7 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN conda install matplotlib numpy nglview ipywidgets -y
+RUN mamba install matplotlib numpy nglview ipywidgets -y
 RUN pip install mdtraj mdplus
 
 # Get workshop files and move them to jovyan directory.
