@@ -14,7 +14,7 @@ RUN pip install mdtraj mdplus
 
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
-RUN mv utilities.py /opt/conda/lib/python3.12/site-packages/utilities.py && \
+RUN mv utilities.py /opt/conda/lib/python3.13/site-packages/utilities.py && \
     rm -rf AUTHORS LICENSE README.md docker .git .github
 
 # Copy lab workspace
