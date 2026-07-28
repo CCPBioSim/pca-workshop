@@ -1,7 +1,7 @@
 # CCPBioSim PCA Workshop
 
 [![ci](https://github.com/ccpbiosim/pca-workshop/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/ccpbiosim/pca-workshop/actions/workflows/build.yaml)
-[![latest](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fccpbiosim.github.io%2Fworkshop.json&query=%24.containers.pca-workshop.latest&labelColor=grey&logo=github&logoColor=white&label=latest&color=purple)](https://github.com/ccpbiosim/pca-workshop/pkgs/container/pca-workshop)
+[![latest](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fccpbiosim.github.io%2Fassets.json&query=%24.containers.pca-workshop.latest&labelColor=grey&logo=github&logoColor=white&label=latest&color=purple)](https://github.com/ccpbiosim/pca-workshop/pkgs/container/pca-workshop)
 [![issues](https://img.shields.io/github/issues/ccpbiosim/pca-workshop?logo=github&labelColor=grey)](https://github.com/CCPBioSim/pca-workshop/issues)
 [![pr](https://img.shields.io/github/issues-pr/ccpbiosim/pca-workshop?logo=github&labelColor=grey)](https://github.com/CCPBioSim/pca-workshop/pulls)
 
